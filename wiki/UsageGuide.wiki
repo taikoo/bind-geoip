@@ -1,5 +1,5 @@
 #summary Guide to applying and using the bind-geoip patch
-#labels Featured
+#labels Featured,Phase-Deploy,Phase-Requirements
 
 =BIND GeoIP=
 
