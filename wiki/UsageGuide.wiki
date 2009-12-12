@@ -3,11 +3,11 @@
 
 =BIND GeoIP=
 
-This patch implements support for the !MaxMind geolocation database (http://www.maxmind.com/app/ip-location) and uses the GeoIP C API.  This patch was inspired by the patch at (http://www.caraytech.com/geodns/).
+This patch implements support for the !MaxMind® geolocation database (http://www.maxmind.com/app/ip-location) and uses the GeoIP C API.  This patch was inspired by the patch at (http://www.caraytech.com/geodns/).
 
-The goals for this patch were to implement the City and other !MaxMind databases and add thread safety.
+The goals for this patch were to implement the City and other !MaxMind® databases and add thread safety.
 
-Support is implemented for all relevant !MaxMind databases:
+Support is implemented for all relevant !MaxMind® databases:
 
   * Country
   * City
@@ -165,11 +165,11 @@ If you see a syslog message like:
 This means BIND can't find the GeoIP C API.  You may need to specify its location via LD_LIBRARY_PATH.
 
 
-==UPDATING THE MAXMIND DATABASES==
+==UPDATING THE MAXMIND® DATABASES==
 
-If you purchase the commercial version of the !MaxMind databases (which we recommend) you can use the !MaxMind "geoipupdate" tool to run in-place updates of the databases.  Alternatively, you can periodically download updated versions of the free databases.
+If you purchase the commercial version of the !MaxMind® databases (which we recommend) you can use the !MaxMind® "geoipupdate" tool to run in-place updates of the databases.  Alternatively, you can periodically download updated versions of the free databases.
 
-Simply reload BIND (via "rndc reload" or SIGHUP) and the !MaxMind databases will be reloaded without client impact, and the above messages should be repeated.
+Simply reload BIND (via "rndc reload" or SIGHUP) and the !MaxMind® databases will be reloaded without client impact, and the above messages should be repeated.
 
 We chose not to use GEOIP_CHECK_CACHE due to the performance hit of a stat() system call for every lookup.  This also more closely follows the behavior of BIND, which does not auto-detect changes.
 
