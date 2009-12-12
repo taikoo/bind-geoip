@@ -188,6 +188,8 @@ match-clients{} clauses that contain multiple cityDB lookups are free from an AP
 
 ==FEEDBACK==
 
-Please email feedback to oss at slide dot com.
+Please comment here to submit feedback.
+
+Thanks!
 
 _Copyright (c) 2009, Slide, Inc._
