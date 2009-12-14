@@ -1,5 +1,5 @@
 #summary General news
-#labels Phase-Design
+#labels Phase-Design,Featured
 
 ==Version 1.3 (2009.12.14)==
 
