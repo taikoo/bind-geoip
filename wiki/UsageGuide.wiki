@@ -1,7 +1,7 @@
 #summary Guide to applying and using the bind-geoip patch
 #labels Featured,Phase-Deploy,Phase-Requirements
 
-=BIND GeoIP=
+=BIND GeoIP v1.3=
 
 This patch implements support for the !MaxMind® geo-location database (http://www.maxmind.com/app/ip-location) and uses the GeoIP C API.  This patch was inspired by the patch at (http://www.caraytech.com/geodns/).
 
