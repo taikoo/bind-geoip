@@ -1,6 +1,10 @@
 #summary General news
 #labels Phase-Design,Featured
 
+==Version 1.3 Released (2009.12.18)==
+
+This has been tested under IPv4 load, but the IPv6 support has not been stress-tested.  Please give it a try and let us know!
+
 ==Version 1.3 (2009.12.14)==
 
 To gain better parity with existing geo-location patches, we will be adding the following features into 1.3:
@@ -9,5 +13,3 @@ To gain better parity with existing geo-location patches, we will be adding the 
   * Backwards-compatibility for `country_*;` format from the geodns (and derived) patch.
 
 We're aiming for a 2009.12.18 release.
-
-Ken
