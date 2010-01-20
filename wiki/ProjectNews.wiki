@@ -1,6 +1,10 @@
 #summary General news
 #labels Phase-Design,Featured
 
+==Patch updated for 9.6.1-P3 (2010.01.19)==
+
+Simply updated the patch to apply to the 9.6.1-P3 version string (instead of 9.6.1-P2).  No other changes were made, and 9.6.1-P3 has been tested successfully.
+
 ==Version 1.3 Released (2009.12.18)==
 
 This has been tested under IPv4 load, but the IPv6 support has not been stress-tested.  Please give it a try and let us know!
