@@ -1,8 +1,6 @@
 #summary What Geo-locating DNS Does and Does Not Provide
 #labels Phase-Deploy
 
-What Geo-locating DNS Does and Does Not Provide
-
 Geo-location provides a fairly accurate geographic location of a specified IP address.  Specifically, when used in conjunction with DNS, it provides the geographic location of the DNS client that issued the request to your DNS server.  This "local" DNS client is called an LDNS server.
 
 The LDNS server is typically part of a large set of DNS servers used by ISPs to provide DNS service to their customers (your visitors).  However, the LDNS IP address could be that of an arbitrarily chosen DNS server, or the DNS client on the visitor's computer itself.
