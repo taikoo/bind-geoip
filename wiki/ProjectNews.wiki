@@ -1,6 +1,10 @@
 #summary General news
 #labels Phase-Design,Featured
 
+==Patch updated for 9.7.1-P2 (2010.07.15)==
+
+Another simple update to apply cleanly to 9.7.1-P2.  No other changes were made, and 9.7.1+ have been tested successfully.  This also seems to apply to 9.6.x with no fuzz (and the harmless "version" conflict).
+
 ==Patch updated for 9.6.1-P3 (2010.01.19)==
 
 Simply updated the patch to apply to the 9.6.1-P3 version string (instead of 9.6.1-P2).  No other changes were made, and 9.6.1-P3 has been tested successfully.
