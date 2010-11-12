@@ -1,6 +1,10 @@
 #summary General news
 #labels Phase-Design,Featured
 
+==Patch updated for 9.7.2-P2 (2010.11.10)==
+
+Patch updated only to bump the version.  Tested successfully in production.
+
 ==Patch updated for 9.7.1-P2 (2010.07.15)==
 
 Another simple update to apply cleanly to 9.7.1-P2.  No other changes were made, and 9.7.1+ have been tested successfully.  This also seems to apply to 9.6.x with no fuzz (and the harmless "version" conflict).
