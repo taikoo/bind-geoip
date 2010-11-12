@@ -20,4 +20,6 @@ Geo-location *does* provide a good estimate of your visitors' geographic locatio
 
 Geo-location does *not* provide a direct, accurate location of a specific visitor.  The accuracy radii of both the LDNS location and a visitor's location with respect to their LDNS server can vary widely, and in rare cases can be as inaccurate as half a country away.
 
-It's important to keep the above limitations in mind, including the distinction between LDNS servers and visitors.
+It's important to keep the above limitations in mind, especially the distinction between LDNS servers and visitors.
+
+Copyright (c) 2010, Slide, Inc.
