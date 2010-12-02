@@ -3,7 +3,7 @@
 
 =BIND GeoIP v1.3=
 
-This patch implements support for the !MaxMind® geo-location database (http://www.maxmind.com/app/ip-location) and uses the GeoIP C API.  This patch was inspired by the patch at (http://www.caraytech.com/geodns/).
+This patch implements support for the [http://www.maxmind.com/app/ip-location MaxMind]® geo-location database and uses the GeoIP C API.  This patch was inspired by the patch at [http://www.caraytech.com/geodns/ Caraytech].
 
 The goals for this patch were to implement the City and other !MaxMind® databases and add thread safety.
 
@@ -54,9 +54,11 @@ To add GeoIP support when running configure, there are two key options:
 
 This enables support for GeoIP functionality.  It looks for GeoIP in standard locations, and will automatically detect if IPv6 support is available.
 
-You can also specify a path to the location of your GeoIP install (within which should exist "lib" and "include" directories):
+You can also specify a path to the location of your GeoIP install (within which should exist "lib", "include", and "share" directories):
 
   `--with-geoip=/usr/local`
+
+Please note that the GeoIP library expects a certain naming scheme for the database files.  For example, the City database is expected to be named "GeoIPCity".  See the MaxMind site for more details; particularly [http://www.maxmind.com/app/installation here] and [http://www.maxmind.com/app/installation?city=1 here].
 
 To enable debug output, use:
 
