@@ -1,6 +1,10 @@
 #summary General news
 #labels Phase-Design,Featured
 
+==Patch updated for 9.8.0 (2011.03.16)==
+
+Patch updated only to bump the version and create a new clean diff.  Tested successfully in production.
+
 ==Patch updated for 9.7.2-P2 (2010.11.10)==
 
 Patch updated only to bump the version.  Tested successfully in production.
