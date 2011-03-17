@@ -26,7 +26,7 @@ Both threaded and non-threaded operation have been tested.  >100B production que
 
 ==SUPPORTED BIND DISTRIBUTIONS==
 
-This patch applies cleanly to and has been heavily tested on BIND production releases 9.6.0-P1 and above.  We plan to continue porting the patch to the latest 9.6 and 9.7 BIND production releases, but back-ports for older BIND versions are *not* planned.
+This patch applies cleanly to and has been heavily tested on BIND production releases 9.6.0-P1 and above.  We plan to continue porting the patch to the latest 9.6 and higher BIND production releases, but back-ports for older BIND versions are not currently planned.
 
 
 ==TESTED UNIX DISTRIBUTIONS==
