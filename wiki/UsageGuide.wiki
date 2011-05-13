@@ -58,8 +58,6 @@ You can also specify a path to the location of your GeoIP install (within which 
 
   `--with-geoip=/usr/local`
 
-Please note that the GeoIP library expects a certain naming scheme for the database files.  For example, the City database is expected to be named "GeoIPCity".  See the MaxMind site for more details; particularly [http://www.maxmind.com/app/installation here] and [http://www.maxmind.com/app/installation?city=1 here].
-
 To enable debug output, use:
 
   `--with-geoip-debug`
@@ -167,6 +165,12 @@ Dec 18 17:00:11 u804 named[5162]: GEO-106FREE 20091201 Build 1 Copyright (c) 200
 }}}
 
 GeoIP support was able to find the Country, City Rev1, Organization, AS, and Country IPv6 databases, but not the others.
+
+If you see the "DB not available" message, it means that the GeoIP C API could not find the data file for that database.
+
+Be aware that GeoIP expects a certain naming scheme for the database files.  For example, the City database is expected to be named `GeoIPCity.dat`.  See the MaxMind site for more details; particularly [http://www.maxmind.com/app/installation here] and [http://www.maxmind.com/app/installation?city=1 here].
+
+Also, if you run named in a chroot() environment, you will need to make sure the database files are accessible <i>from within the chroot() tree</i>.  For example, the default MaxMind data directory is `/usr/share/GeoIP`.  In a named chroot() environment, these files will need to be available in `/var/named/usr/share/GeoIP`.  This duplication can be managed, for example, by a wrapper around geoipupdate that will copy/rsync the files from `/usr/share/GeoIP` to `/var/named/usr/share/GeoIP`.
 
 IMPORTANT NOTE: If you specify a geoip rule in match-clients{} that reflects an unavailable DB, it will be silently ignored.
 
