@@ -73,7 +73,7 @@ GeoIP matches are performed in the BIND match-clients{} clause in a BIND view.  
 
 For values that contain spaces, the '`_`' character should be used instead.  For timezone values that contain the '/' character, the '|' character should be used instead.
 
-Note that match-clients{} options are ANDed.  More complex logic must be obtained with multiple views (ORs) or careful use and solid understanding of the ! operator.
+Note that match-clients{} options are ORed.
 
 Some examples:
 {{{
@@ -103,13 +103,6 @@ geoip_orgDB_name_Slide;
 
 The mechanics of BIND views and other BIND details are beyond the scope of this document, but the following is an example:
 {{{
-view "PARIS-FRANCE" {
-	match-clients { geoip_cityDB_country_FR; geoip_cityDB_city_Paris; };
-	zone "example.com" in {
-		type master;
-		file "paris.france.example.com.dns";
-	};
-};
 # Note this will match ANY city named Paris!
 view "PARIS" {
 	match-clients { geoip_cityDB_city_Paris; };
@@ -140,7 +133,7 @@ view "DEFAULT" {
 };
 }}}
 
-Views have precedence -- the first matching view will be used.  LDNS servers in Paris, FR will see results from the first zone file, and any other city named Paris will see results from the second zone file.  LDNS servers in the rest of FR and all of DE will then see their respective zones, and everyone else will see the final zone file.
+Views have precedence -- the first matching view will be used.  LDNS servers in Paris will see results from the first zone file.  LDNS servers in all of FR and all of DE will then see their respective zones, and everyone else will see the final zone file.
 
 
 ==STARTUP==
