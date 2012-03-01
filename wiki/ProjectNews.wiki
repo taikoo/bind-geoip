@@ -1,6 +1,10 @@
 #summary General news
 #labels Phase-Design,Featured
 
+==Patch updated for 9.9.0 (2012.03.01)==
+
+This is an updated 1.3 patch for BIND 9.9.0.  PLEASE NOTE: Previous patches (with fuzz) will erroneously apply to 9.9.0 and cause hard failure!  Please only apply patches to differing BIND revisions with "patch -F0".
+
 ==Version 2.0 in planning (2011.05.12)==
 
 With the release of v1.4.7 of the GeoIP C API, new database types have been made available.  Initial goals for geoip-2.0 are:
