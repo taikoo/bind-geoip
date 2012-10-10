@@ -1,6 +1,10 @@
 #summary General news
 #labels Phase-Design,Featured
 
+==Patch updated for 9.9.1-P4 and 9.9.2 (2012.10.09)==
+
+Clean patches are now available for geoip-1.3 against 9.9.1-P4 and 9.9.2.
+
 ==Patch updated for 9.9.1-P2 (2012.08.02)==
 
 This is an updated 1.3 patch for BIND 9.9.1-P2.  No functional changes were made.
