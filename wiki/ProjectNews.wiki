@@ -1,6 +1,17 @@
 #summary General news
 #labels Phase-Design,Featured
 
+==Version 1.4 released; patch updated for 9.8.7-P1 and 9.9.5-P1==
+
+1.4 has been released, which includes fixes for a memory leak and broken IPv6 functionality, as well as clean patches for contemporary BIND versions.
+
+CAVEAT: While these pass the bundled bind tests (make test), but I'm no longer able to test against significant production traffic.  Reports of success or issues would be greatly appreciated.
+
+ * Clean patch against 9.8.7-P1: [http://web.irridia.com/patches/bind-9.8.7-P1-geoip-1.4.patch bind-9.8.7-P1-geoip-1.4.patch] 
+ * Clean patch against 9.9.5-P1: [http://web.irridia.com/patches/bind-9.9.5-P1-geoip-1.4.patch bind-9.9.5-P1-geoip-1.4.patch]
+
+Version 2.0 was scrubbed due to the planned incorporation of this patch into BIND 9.10.  Future patches for potentially missing functionality may be made available in the future (e.g., radii).
+
 ==Patch updated for 9.9.1-P4 and 9.9.2 (2012.10.09)==
 
 Clean patches are now available for geoip-1.3 against 9.9.1-P4 and 9.9.2.
