@@ -5,7 +5,7 @@
 
 1.4 has been released, which includes fixes for a memory leak and broken IPv6 functionality, as well as clean patches for contemporary BIND versions.
 
-CAVEAT: While these pass the bundled bind tests (make test), but I'm no longer able to test against significant production traffic.  Reports of success or issues would be greatly appreciated.
+CAVEAT: While these pass the bundled bind tests (make test), I'm no longer able to test against significant production traffic.  Reports of success or issues would be greatly appreciated.
 
  * Clean patch against 9.8.7-P1: [http://web.irridia.com/patches/bind-9.8.7-P1-geoip-1.4.patch bind-9.8.7-P1-geoip-1.4.patch] 
  * Clean patch against 9.9.5-P1: [http://web.irridia.com/patches/bind-9.9.5-P1-geoip-1.4.patch bind-9.9.5-P1-geoip-1.4.patch]
