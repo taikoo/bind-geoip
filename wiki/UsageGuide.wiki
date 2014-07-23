@@ -1,9 +1,9 @@
 #summary Guide to applying and using the bind-geoip patch
 #labels Featured,Phase-Deploy,Phase-Requirements
 
-=BIND GeoIP v1.3=
+=BIND GeoIP v1.4=
 
-This patch implements support for the [http://www.maxmind.com/app/ip-location MaxMind]® geo-location database and uses the GeoIP C API.  This patch was inspired by the patch at [http://www.caraytech.com/geodns/ Caraytech].
+This patch implements support for the [http://www.maxmind.com/app/ip-location MaxMind]® geo-location database and uses the GeoIP C API.  This patch was inspired by the patch at [http://www.caraytech.com/geodns/ Caraytech], and was incorporated into ISC BIND 9.10.
 
 The goals for this patch were to implement the City and other !MaxMind® databases and add thread safety.
 
@@ -40,7 +40,7 @@ To build BIND with GeoIP support, you will first need to build/install the GeoIP
 
 After unpacking the BIND distribution, cd into the untarred directory and run:
 
-  `patch -p0 -b < /path/to/this/patch/bind-geoip-1.3.patch`
+  `patch -p0 -b < /path/to/this/patch/bind-9.9.5-P1-geoip-1.4.patch`
 
 This will apply the required patches. You can ignore any conflict on version, but we recommend you change the RELEASEVER string to denote a patched version.
 
