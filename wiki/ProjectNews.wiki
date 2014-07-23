@@ -1,7 +1,7 @@
 #summary General news
 #labels Phase-Design,Featured
 
-==Version 1.4 released; patch updated for 9.8.7-P1 and 9.9.5-P1==
+==Version 1.4 released; patch updated for 9.8.7-P1 and 9.9.5-P1 (2014.7.23)==
 
 1.4 has been released, which includes fixes for a memory leak and broken IPv6 functionality, as well as clean patches for contemporary BIND versions.
 
