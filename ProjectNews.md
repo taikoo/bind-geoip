@@ -1,0 +1,66 @@
+## Version 1.4 released; patch updated for 9.8.7-P1 and 9.9.5-P1 (2014.7.23) ##
+
+1.4 has been released, which includes fixes for a memory leak and broken IPv6 functionality, as well as clean patches for contemporary BIND versions.
+
+CAVEAT: While these pass the bundled bind tests (make test), I'm no longer able to test against significant production traffic.  Reports of success or issues would be greatly appreciated.
+
+  * Clean patch against 9.8.7-P1: [bind-9.8.7-P1-geoip-1.4.patch](http://web.irridia.com/patches/bind-9.8.7-P1-geoip-1.4.patch)
+  * Clean patch against 9.9.5-P1: [bind-9.9.5-P1-geoip-1.4.patch](http://web.irridia.com/patches/bind-9.9.5-P1-geoip-1.4.patch)
+
+Version 2.0 was scrubbed due to the planned incorporation of this patch into BIND 9.10.  Future patches for potentially missing functionality may be made available in the future (e.g., radii).
+
+## Patch updated for 9.9.1-P4 and 9.9.2 (2012.10.09) ##
+
+Clean patches are now available for geoip-1.3 against 9.9.1-P4 and 9.9.2.
+
+## Patch updated for 9.9.1-P2 (2012.08.02) ##
+
+This is an updated 1.3 patch for BIND 9.9.1-P2.  No functional changes were made.
+
+## Patch updated for 9.9.0 (2012.03.01) ##
+
+This is an updated 1.3 patch for BIND 9.9.0.  PLEASE NOTE: Previous patches (with fuzz) will erroneously apply to 9.9.0 and cause hard failure!  Please only apply patches to differing BIND revisions with "patch -F0".
+
+## Version 2.0 in planning (2011.05.12) ##
+
+With the release of v1.4.7 of the GeoIP C API, new database types have been made available.  Initial goals for geoip-2.0 are:
+
+  * Support a named.conf config option to alter the directory that the API looks in to find database .dat files.
+  * Emit into the named log the name of the directory path in which the API is expecting to find database .dat files.  This will help diagnose the reported installation difficulties.
+  * Support any relevant new database editions supported by 1.4.7.
+  * Hopefully the geoip-2.0 release will remain compatible with GeoIP C API releases before 1.4.7.  EIther way, geoip-1.3 should remain compatible with all versions.
+
+I haven't received much feedback, but if there's something you'd like me to add/fix/change, let me know!
+
+## Patch updated for 9.8.0-P1 (2011.05.09) ##
+
+Patch updated only to bump the version.  Tested successfully in production.
+
+## Patch updated for 9.8.0 (2011.03.16) ##
+
+Patch updated only to bump the version and create a new clean diff.  Tested successfully in production.
+
+## Patch updated for 9.7.2-P2 (2010.11.10) ##
+
+Patch updated only to bump the version.  Tested successfully in production.
+
+## Patch updated for 9.7.1-P2 (2010.07.15) ##
+
+Another simple update to apply cleanly to 9.7.1-P2.  No other changes were made, and 9.7.1+ have been tested successfully.  This also seems to apply to 9.6.x with no fuzz (and the harmless "version" conflict).
+
+## Patch updated for 9.6.1-P3 (2010.01.19) ##
+
+Simply updated the patch to apply to the 9.6.1-P3 version string (instead of 9.6.1-P2).  No other changes were made, and 9.6.1-P3 has been tested successfully.
+
+## Version 1.3 Released (2009.12.18) ##
+
+This has been tested under IPv4 load, but the IPv6 support has not been stress-tested.  Please give it a try and let us know!
+
+## Version 1.3 (2009.12.14) ##
+
+To gain better parity with existing geo-location patches, we will be adding the following features into 1.3:
+
+  * Basic IPv6 support
+  * Backwards-compatibility for `country_*;` format from the geodns (and derived) patch.
+
+We're aiming for a 2009.12.18 release.
